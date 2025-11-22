@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - RoofSig</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #C41E3A;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+
+        .radar-ring {
+            position: absolute;
+            border: 2px solid #C41E3A;
+            border-radius: 50%;
+            animation: radar-pulse 2s ease-out infinite;
+        }
+
+        .radar-ring:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 0;
+        }
+
+        .radar-ring:nth-child(2) {
+            width: 30px;
+            height: 30px;
+            top: 5px;
+            left: 5px;
+            animation-delay: 0.3s;
+        }
+
+        .radar-ring:nth-child(3) {
+            width: 10px;
+            height: 10px;
+            top: 15px;
+            left: 15px;
+            background: #C41E3A;
+            animation: pulse-dot 1.5s ease-in-out infinite;
+        }
+
+        @keyframes radar-pulse {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% {
+                opacity: 1;
+                box-shadow: 0 0 10px #C41E3A;
+            }
+            50% {
+                opacity: 0.6;
+                box-shadow: 0 0 20px #C41E3A;
+            }
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #C41E3A;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 2rem 80px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .last-updated {
+            color: #C41E3A;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #C41E3A;
+        }
+
+        h3 {
+            color: #C41E3A;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 1rem 0 1.5rem 2rem;
+            color: #ccc;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            border-top: 2px solid #C41E3A;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+        }
+
+        footer a {
+            color: #C41E3A;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .content {
+                padding: 100px 1.5rem 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <div class="radar-ring"></div>
+                    <div class="radar-ring"></div>
+                    <div class="radar-ring"></div>
+                </div>
+                RoofSig
+            </a>
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Privacy Policy</h1>
+        <div class="last-updated">Last updated: November 21, 2025</div>
+
+        <div class="section">
+            <p>This Privacy Policy describes how RoofSig LLC ("RoofSig," "we," "us," or "our") collects, uses, discloses, and protects information in connection with:</p>
+            <ul>
+                <li>The RoofSig website(s), dashboards, and services (the "Platform")</li>
+                <li>RoofSig's business customers ("Business Clients") who use RoofSig to manage calls, messaging, and automations</li>
+                <li>Mobile messaging (SMS/MMS) and interactive voice response (IVR) services delivered through or on behalf of RoofSig and its Business Clients ("Mobile Messaging Services")</li>
+            </ul>
+            <p>This Policy applies to processing conducted in the United States and Canada.</p>
+        </div>
+
+        <h2>1. Roles and Responsibilities</h2>
+
+        <div class="section">
+            <h3>1.1 RoofSig as Service Provider / Processor</h3>
+            <p>For data processed on behalf of Business Clients (e.g., their lead and customer information, call logs, SMS transcripts), RoofSig acts primarily as a service provider or processor.</p>
+            <p>Business Clients determine which individuals are contacted, what content is sent, and the legal basis for such communications.</p>
+
+            <h3>1.2 Business Clients as Controllers</h3>
+            <p>Business Clients are the "businesses" or "controllers" with respect to their leads and customers' personal information.</p>
+            <p>Business Clients are responsible for: obtaining consent, providing required notices, honoring opt-outs, and complying with applicable laws (e.g., TCPA, CASL, state privacy laws).</p>
+            <p>RoofSig's services and this Privacy Policy are designed to support compliance with applicable telecommunications and privacy regulations, including the Telephone Consumer Protection Act (TCPA), the CAN-SPAM Act, the Canadian Anti-Spam Legislation (CASL), and relevant state privacy laws. However, Business Clients remain solely responsible for their own compliance with all applicable legal requirements for their messaging programs.</p>
+
+            <h3>1.3 RoofSig as Controller</h3>
+            <p>RoofSig is a controller for limited categories of data (e.g., account registration data for Business Clients, usage logs for security and billing, and direct communications with RoofSig).</p>
+        </div>
+
+        <h2>2. Scope of This Policy</h2>
+
+        <div class="section">
+            <p>This Policy covers:</p>
+            <ul>
+                <li>Data about Business Clients and their authorized users (e.g., owners, staff, administrators)</li>
+                <li>Data about End Users (e.g., homeowners or customers) who call, receive SMS/MMS, interact with IVR, or receive review requests via systems operated by RoofSig</li>
+                <li>Data collected via the Platform, APIs, dashboards, and Mobile Messaging Services</li>
+            </ul>
+            <p>It does not override or replace any separate agreements or data processing addenda in place between RoofSig and a Business Client. In the event of a conflict, the executed agreement or addendum governs to the extent of the conflict.</p>
+        </div>
+
+        <h2>3. Information We Collect</h2>
+
+        <div class="section">
+            <h3>3.1 Business Client and Account Data</h3>
+            <p>Collected from Business Clients and their authorized users:</p>
+            <ul>
+                <li><strong>Identification and contact details:</strong> name, business name, business address, email, phone number</li>
+                <li><strong>Account credentials:</strong> username, hashed passwords or SSO identifiers</li>
+                <li><strong>Billing information:</strong> payment method tokens (via payment processor), invoicing details, tax-related data as required</li>
+                <li><strong>Business configuration:</strong> service areas, business hours, escalation numbers, preferences, and settings saved in RoofSig</li>
+            </ul>
+
+            <h3>3.2 End User and Lead Data</h3>
+            <p>Collected or processed when End Users interact with a Business Client via RoofSig:</p>
+            <ul>
+                <li><strong>Contact details:</strong> mobile phone number, other phone numbers, name (if provided), address or service location (if provided)</li>
+                <li><strong>Lead and appointment details:</strong> date and time of inquiries, appointment preferences, selected service types (e.g., inspection, repair), job notes</li>
+                <li><strong>Communications content:</strong>
+                    <ul>
+                        <li>SMS/MMS message content and metadata</li>
+                        <li>IVR keypresses (DTMF) and associated selections</li>
+                        <li>Transcripts and summaries of calls or voicemails where implemented</li>
+                    </ul>
+                </li>
+                <li><strong>Technical and routing data:</strong> call start/stop times, call status (answered, missed, abandoned), carrier information, IP addresses (where applicable to web/chat)</li>
+            </ul>
+
+            <h3>3.3 Platform and Usage Data</h3>
+            <p>Collected when Business Clients and authorized users access the Platform:</p>
+            <ul>
+                <li><strong>Log data:</strong> IP address, browser type, device information, pages visited, timestamps, and activities within the dashboard</li>
+                <li><strong>Configuration changes:</strong> audit logs of changes to business hours, call flows, toggles, and settings</li>
+                <li><strong>Error and performance logs:</strong> system events required to monitor and troubleshoot reliability and security</li>
+            </ul>
+
+            <h3>3.4 Cookies and Similar Technologies</h3>
+            <p>On RoofSig's website and dashboards, we may use:</p>
+            <ul>
+                <li>Cookies, local storage, or similar technologies for session management, authentication, and basic analytics</li>
+                <li>Third-party analytics tools to measure usage patterns on the Platform</li>
+            </ul>
+            <p>Where required by law, we will provide appropriate cookie notices and limited controls.</p>
+        </div>
+
+        <h2>4. How We Use Information</h2>
+
+        <div class="section">
+            <h3>4.1 Providing and Operating the Services</h3>
+            <p>RoofSig uses collected information to:</p>
+            <ul>
+                <li>Route and handle inbound and outbound calls, SMS/MMS, IVR interactions, and review requests on behalf of Business Clients</li>
+                <li>Create and manage leads, bookings, and related records in our systems</li>
+                <li>Provide dashboards, reports, and metrics (e.g., lead counts, call capture rates) to Business Clients</li>
+                <li>Configure and maintain automated workflows, call flows, and messaging sequences</li>
+                <li>Authenticate authorized users and provide access to the Platform</li>
+            </ul>
+
+            <h3>4.2 Support, Maintenance, and Security</h3>
+            <p>We use information to:</p>
+            <ul>
+                <li>Diagnose and resolve technical issues</li>
+                <li>Monitor service health and error rates</li>
+                <li>Detect and prevent fraud, abuse, or unauthorized access</li>
+                <li>Maintain logs necessary for security and compliance</li>
+            </ul>
+
+            <h3>4.3 Billing and Account Management</h3>
+            <p>We use Business Client data to:</p>
+            <ul>
+                <li>Process payments and invoices</li>
+                <li>Track subscriptions, usage, and entitlements</li>
+                <li>Communicate with Business Clients about account status, subscription changes, or service notices</li>
+            </ul>
+
+            <h3>4.4 Analytics and Service Improvement</h3>
+            <p>We may use:</p>
+            <ul>
+                <li>Aggregated or de-identified data to analyze usage trends, improve features, and optimize system performance</li>
+                <li>Limited individual-level usage information to troubleshoot problems and enhance user experience on the Platform</li>
+            </ul>
+            <p>We do not use End User mobile messaging opt-in data to build unrelated marketing profiles.</p>
+
+            <h3>4.5 Legal and Compliance</h3>
+            <p>We may process information as necessary to:</p>
+            <ul>
+                <li>Comply with applicable laws, regulations, and legal processes</li>
+                <li>Respond to lawful requests from public and governmental authorities</li>
+                <li>Enforce our terms, prevent abuse, and protect our rights, property, and safety, or that of our users and the public</li>
+            </ul>
+        </div>
+
+        <h2>5. Mobile Messaging and IVR-Specific Practices</h2>
+
+        <div class="section">
+            <h3>5.1 Consent and Opt-In</h3>
+            <p>Business Clients are responsible for obtaining all legally required consent from End Users before sending them calls, SMS/MMS messages, or automated communications through RoofSig.</p>
+            <p>RoofSig may provide technical features to support consent capture, logging, and opt-out handling but does not verify the sufficiency of any consent.</p>
+
+            <h3>5.2 Opt-Out and Preferences</h3>
+            <p>End Users may typically opt out of SMS communications by replying with STOP or similar recognized keywords, as configured by the Business Client.</p>
+            <p>When RoofSig's systems detect a valid opt-out command, RoofSig will flag the associated number as opted out for that specific program and will not send further messages through that program except where required for confirmation or legal compliance.</p>
+            <p>Business Clients are responsible for aligning their use of RoofSig's tools with applicable opt-out obligations.</p>
+
+            <h3>5.3 Content of Messages and Calls</h3>
+            <p>The content of messages and IVR flows is determined by Business Clients.</p>
+            <p>RoofSig processes these communications as a service provider and does not routinely review all content.</p>
+            <p>RoofSig may access content and logs for troubleshooting, security, compliance checks, or as required by law.</p>
+        </div>
+
+        <h2>6. Sharing and Disclosure of Information</h2>
+
+        <div class="section">
+            <h3>6.1 Core Principle for Mobile Numbers and Messaging Consent</h3>
+            <p>RoofSig follows this principle:</p>
+            <ul>
+                <li>No mobile information will be shared with third parties or affiliates for marketing or promotional purposes.</li>
+                <li>Information may be shared with subcontractors and service providers strictly to support the Services (for example, telecommunications, hosting, or customer support).</li>
+                <li>All other use case categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</li>
+            </ul>
+            <p>This principle applies to mobile numbers, opt-in status, and SMS/MMS consent data collected via RoofSig's Mobile Messaging Services. Any sharing is limited to service provisioning, compliance, and support operations.</p>
+
+            <h3>6.2 Sharing with Business Clients</h3>
+            <p><strong>For End Users:</strong></p>
+            <p>If you are an End User communicating with a Business Client, RoofSig may share your relevant communication details (e.g., phone number, message content, call logs, booking details) with that Business Client, because they are the party you are dealing with directly.</p>
+            <p>Business Clients control how they further use or disclose such information, subject to their own privacy policies and applicable laws.</p>
+
+            <h3>6.3 Service Providers and Subcontractors</h3>
+            <p>RoofSig may share information with service providers and subcontractors that perform functions on our behalf, such as:</p>
+            <ul>
+                <li>Telecommunications and messaging providers (e.g., carriers, Twilio)</li>
+                <li>Cloud hosting and infrastructure providers</li>
+                <li>Payment processors</li>
+                <li>Customer support and ticketing systems</li>
+                <li>Data storage, monitoring, and logging providers</li>
+            </ul>
+            <p>These entities are authorized to use the information only as necessary to provide services to RoofSig and are contractually restricted from using mobile messaging originator opt-in data and consent for third-party marketing.</p>
+
+            <h3>6.4 Affiliates</h3>
+            <p>RoofSig may share data with its affiliates (if any) for internal operational purposes (e.g., technical support, billing, consolidated administration), subject to this Policy.</p>
+            <p>We do not share mobile messaging originator opt-in data with affiliates for their own marketing or promotional purposes.</p>
+
+            <h3>6.5 Legal, Safety, and Compliance</h3>
+            <p>We may disclose information:</p>
+            <ul>
+                <li>To comply with legal obligations or respond to lawful requests from public authorities</li>
+                <li>To protect and defend our rights, property, or safety, or that of our Business Clients, End Users, or the public</li>
+                <li>To investigate and prevent fraud, abuse, or security incidents</li>
+            </ul>
+
+            <h3>6.6 Business Transfers</h3>
+            <p>If RoofSig is involved in a merger, acquisition, financing, reorganization, or sale of assets, information may be transferred as part of that transaction, subject to continued protection consistent with this Policy. Any successor entity will be bound by obligations at least as protective as those described here.</p>
+        </div>
+
+        <h2>7. Data Retention</h2>
+
+        <div class="section">
+            <h3>7.1 General Retention</h3>
+            <p>RoofSig retains information for as long as reasonably necessary to:</p>
+            <ul>
+                <li>Provide the Services to Business Clients</li>
+                <li>Maintain records of communications, consent, and opt-out events for legal and operational reasons</li>
+                <li>Comply with legal, tax, accounting, or regulatory requirements</li>
+                <li>Resolve disputes, enforce agreements, and protect our rights</li>
+            </ul>
+
+            <h3>7.2 Business Client-Controlled Retention</h3>
+            <p>Where technically feasible, RoofSig may provide configuration options that allow Business Clients to adjust retention periods for certain categories of data (e.g., leads, transcripts).</p>
+            <p>Business Clients remain responsible for their own retention policies and obligations under applicable law.</p>
+
+            <h3>7.3 Deletion and Anonymization</h3>
+            <p>When data is no longer needed, RoofSig may delete or anonymize it in production systems, subject to backup and archival constraints and legal obligations.</p>
+            <p>Backup copies may persist for a limited time before being overwritten or destroyed in the ordinary course of operations.</p>
+        </div>
+
+        <h2>8. Security</h2>
+
+        <div class="section">
+            <h3>8.1 Measures</h3>
+            <p>RoofSig implements commercially reasonable technical and organizational measures to protect information, including:</p>
+            <ul>
+                <li>Access controls and authentication for Platform access</li>
+                <li>Encryption in transit where appropriate (e.g., HTTPS for dashboard access)</li>
+                <li>Logical separation of customer environments and data</li>
+                <li>Monitoring and logging of key systems</li>
+                <li>Regular review of core infrastructure and dependencies</li>
+            </ul>
+
+            <h3>8.2 Limitations</h3>
+            <p>No system can guarantee perfect security. Business Clients are responsible for:</p>
+            <ul>
+                <li>Securing their own systems, devices, and networks</li>
+                <li>Managing access to their RoofSig accounts and credentials</li>
+                <li>Configuring integrations and access controls appropriate to their risk profile</li>
+            </ul>
+        </div>
+
+        <h2>9. Children's Privacy</h2>
+
+        <div class="section">
+            <p>The Services are intended for business use and for communications with adult customers of Business Clients. RoofSig does not knowingly collect or process personal information from children under the age of 13 in the United States or under the age of 16 in Canada.</p>
+            <p>If RoofSig becomes aware that it has unintentionally collected such information without appropriate consent, RoofSig will delete it or take other appropriate steps.</p>
+        </div>
+
+        <h2>10. Regional Information: United States and Canada</h2>
+
+        <div class="section">
+            <h3>10.1 Geographic Focus</h3>
+            <p>RoofSig provides services for Business Clients operating in the United States and Canada. Data is generally processed in data centers located in these regions or in other locations used by our infrastructure providers, subject to contractual safeguards.</p>
+
+            <h3>10.2 State and Provincial Privacy Laws</h3>
+            <p>Certain US states or Canadian provinces may grant additional rights regarding personal information (e.g., access, correction, deletion). When RoofSig acts as a service provider/processor, such requests must generally be directed to the relevant Business Client (the controller). RoofSig will support Business Clients' efforts to respond, where feasible and required by contract or law.</p>
+        </div>
+
+        <h2>11. Rights and Choices</h2>
+
+        <div class="section">
+            <h3>11.1 End Users</h3>
+            <p>End Users who receive communications through RoofSig's systems should generally exercise their privacy and communication rights by contacting the relevant Business Client, because they are the primary controller of the data.</p>
+            <p>End Users may:</p>
+            <ul>
+                <li>Opt-out of marketing or other SMS/MMS communications using STOP or similar supported commands</li>
+                <li>Contact the Business Client directly to exercise rights of access, correction, or deletion where applicable</li>
+            </ul>
+            <p>RoofSig will support Business Clients in honoring these rights when technically and legally feasible.</p>
+
+            <h3>11.2 Business Clients and Authorized Users</h3>
+            <p>Business Clients and their authorized users may:</p>
+            <ul>
+                <li>Update account and profile information via the Platform</li>
+                <li>Request account closure and data export for their own Customer Data, subject to contractual and legal limitations</li>
+                <li>Contact RoofSig using the contact details below for privacy-related questions specific to RoofSig's role</li>
+            </ul>
+        </div>
+
+        <h2>12. Cookies and Tracking Technologies</h2>
+
+        <div class="section">
+            <h3>12.1 Use</h3>
+            <p>RoofSig may use cookies, local storage, and similar technologies on its websites and dashboards to:</p>
+            <ul>
+                <li>Maintain user sessions and authentication</li>
+                <li>Remember user preferences and settings</li>
+                <li>Collect basic analytics about usage patterns</li>
+            </ul>
+
+            <h3>12.2 Control</h3>
+            <p>Users of the Platform may control certain cookie behaviors through browser settings. Disabling cookies may limit functionality of the Platform.</p>
+        </div>
+
+        <h2>13. Third-Party Links and Sites</h2>
+
+        <div class="section">
+            <p>The Platform and communications sent through RoofSig may contain links to third-party websites or services. These third parties operate independently and are not controlled by RoofSig. Their privacy practices are governed by their own policies.</p>
+            <p>Business Clients are responsible for ensuring that any external links they include in communications are appropriate and compliant.</p>
+        </div>
+
+        <h2>14. Changes to This Privacy Policy</h2>
+
+        <div class="section">
+            <p>RoofSig may update this Privacy Policy from time to time. When changes are made:</p>
+            <ul>
+                <li>The "Last updated" date at the top of this document will be revised</li>
+                <li>Material changes may be communicated through the Platform, by email to Business Clients, or by posting a prominent notice on the RoofSig website</li>
+            </ul>
+            <p>Continued use of the Services after the effective date of any changes constitutes acceptance of the revised Policy, subject to applicable law.</p>
+        </div>
+
+        <h2>15. Contact Information</h2>
+
+        <div class="section">
+            <p>For questions or concerns about this Privacy Policy or RoofSig's privacy practices:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:privacy@roofsig.com" style="color: #C41E3A;">privacy@roofsig.com</a>
+            </p>
+            <p>
+                <strong>Mailing address:</strong><br>
+                RoofSig LLC<br>
+                30 N Gould St Ste N, Sheridan<br>
+                Sheridan County, WY 82801<br>
+                United States
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 RoofSig LLC. All rights reserved. | <a href="index.html">Home</a> | <a href="terms.html">Terms of Service</a></p>
+    </footer>
+</body>
+</html>
