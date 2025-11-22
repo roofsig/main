@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Terms of Service - RoofSig</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.8;
+            color: #e0e0e0;
+            background: #0a0a0a;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid #C41E3A;
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.5rem;
+            font-weight: 800;
+            letter-spacing: 3px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 40px;
+            height: 40px;
+            position: relative;
+        }
+
+        .radar-ring {
+            position: absolute;
+            border: 2px solid #C41E3A;
+            border-radius: 50%;
+            animation: radar-pulse 2s ease-out infinite;
+        }
+
+        .radar-ring:nth-child(1) {
+            width: 40px;
+            height: 40px;
+            top: 0;
+            left: 0;
+        }
+
+        .radar-ring:nth-child(2) {
+            width: 30px;
+            height: 30px;
+            top: 5px;
+            left: 5px;
+            animation-delay: 0.3s;
+        }
+
+        .radar-ring:nth-child(3) {
+            width: 10px;
+            height: 10px;
+            top: 15px;
+            left: 15px;
+            background: #C41E3A;
+            animation: pulse-dot 1.5s ease-in-out infinite;
+        }
+
+        @keyframes radar-pulse {
+            0% {
+                opacity: 1;
+                transform: scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.5);
+            }
+        }
+
+        @keyframes pulse-dot {
+            0%, 100% {
+                opacity: 1;
+                box-shadow: 0 0 10px #C41E3A;
+            }
+            50% {
+                opacity: 0.6;
+                box-shadow: 0 0 20px #C41E3A;
+            }
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        nav a:hover {
+            color: #C41E3A;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 120px 2rem 80px;
+        }
+
+        h1 {
+            color: #fff;
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .last-updated {
+            color: #C41E3A;
+            font-size: 0.95rem;
+            font-weight: 600;
+            margin-bottom: 3rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-top: 3rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #C41E3A;
+        }
+
+        h3 {
+            color: #C41E3A;
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1.25rem;
+            color: #ccc;
+            font-size: 1rem;
+        }
+
+        ul {
+            margin: 1rem 0 1.5rem 2rem;
+            color: #ccc;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+            line-height: 1.8;
+        }
+
+        strong {
+            color: #fff;
+            font-weight: 600;
+        }
+
+        .section {
+            margin-bottom: 2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #0a0a0a;
+            border-top: 2px solid #C41E3A;
+            padding: 2rem;
+            text-align: center;
+            color: #666;
+        }
+
+        footer a {
+            color: #C41E3A;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+
+            .content {
+                padding: 100px 1.5rem 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <div class="radar-ring"></div>
+                    <div class="radar-ring"></div>
+                    <div class="radar-ring"></div>
+                </div>
+                RoofSig
+            </a>
+            <a href="index.html">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Business Terms of Service</h1>
+        <div class="last-updated">Last updated: November 21, 2025</div>
+
+        <div class="section">
+            <p>These Terms of Service ("Terms") govern access to and use of the RoofSig platform and services by business customers. By executing an order form, clicking "I agree," or accessing or using the Services, the entity you represent ("Customer") agrees to be bound by these Terms with RoofSig LLC ("RoofSig," "we," "us," or "our").</p>
+            <p>If you do not agree, do not use the Services.</p>
+        </div>
+
+        <h2>1. Definitions</h2>
+
+        <div class="section">
+            <h3>1.1</h3>
+            <p><strong>"Affiliate"</strong> means any entity that controls, is controlled by, or is under common control with a party.</p>
+
+            <h3>1.2</h3>
+            <p><strong>"Authorized Users"</strong> means employees, contractors, and agents of Customer who are authorized to access and use the Services on Customer's behalf.</p>
+
+            <h3>1.3</h3>
+            <p><strong>"Documentation"</strong> means any online or written user guides, technical documentation, or usage policies provided by RoofSig.</p>
+
+            <h3>1.4</h3>
+            <p><strong>"Customer Data"</strong> means any data, content, text, phone numbers, contact lists, call detail information, metadata, or other material submitted to or processed by the Services on behalf of Customer, including data relating to Customer's own customers or leads.</p>
+
+            <h3>1.5</h3>
+            <p><strong>"End Users"</strong> means individuals or entities that interact with Customer via the Services (for example, persons who call Customer, receive SMS/MMS messages, or receive review requests triggered by the Services).</p>
+
+            <h3>1.6</h3>
+            <p><strong>"Order Form"</strong> means any ordering document or online order specifying the Services to be provided, including pricing, term, and any additional terms.</p>
+
+            <h3>1.7</h3>
+            <p><strong>"Services"</strong> means RoofSig's hosted software, APIs, automation workflows, dashboards, messaging and call-handling capabilities, and related support, as described in the applicable Order Form and Documentation.</p>
+
+            <h3>1.8</h3>
+            <p><strong>"Third-Party Services"</strong> means any third-party products or services integrated with or used by the Services, including telecommunication carriers, Twilio, email or SMS gateways, CRMs, and payment processors.</p>
+        </div>
+
+        <h2>2. Eligibility and Territory</h2>
+
+        <div class="section">
+            <h3>2.1</h3>
+            <p>The Services are intended only for business use by entities operating in the <strong>United States and Canada</strong>. Customer represents and warrants that its primary business operations and the End Users it contacts through the Services are located in the United States or Canada.</p>
+
+            <h3>2.2</h3>
+            <p>RoofSig does not intend the Services to be used for communications subject to the laws of the European Union, European Economic Area, United Kingdom, or other non-US/Canadian jurisdictions with differing data protection regimes, unless expressly agreed in writing.</p>
+        </div>
+
+        <h2>3. Services; Access and Use</h2>
+
+        <div class="section">
+            <h3>3.1 Provision of Services</h3>
+            <p>Subject to payment of fees and compliance with these Terms, RoofSig grants Customer a non-exclusive, non-transferable, non-sublicensable right during the Subscription Term to access and use the Services solely for Customer's internal business purposes.</p>
+
+            <h3>3.2 Managed Automation</h3>
+            <p>The Services may include configuration and ongoing management of call flows, SMS flows, review requests, and other automation on Customer's behalf. Unless otherwise specified in an Order Form, RoofSig provides configuration as a managed service; Customer does not receive a license to the underlying workflow engine except through the RoofSig interface.</p>
+
+            <h3>3.3 Restrictions</h3>
+            <p>Customer must not:</p>
+            <ul>
+                <li>(a) copy, modify, or create derivative works of the Services;</li>
+                <li>(b) reverse engineer, decompile, or disassemble the Services (except to the extent expressly permitted by law);</li>
+                <li>(c) attempt to circumvent security or usage controls;</li>
+                <li>(d) use the Services to build a competing product or service;</li>
+                <li>(e) resell, lease, or provide the Services to third parties as a hosted service, except to the extent RoofSig explicitly authorizes multi-tenant use.</li>
+            </ul>
+
+            <h3>3.4 Authorized Users</h3>
+            <p>Customer is responsible for:</p>
+            <ul>
+                <li>(a) identifying and authenticating all Authorized Users;</li>
+                <li>(b) maintaining the confidentiality of authentication credentials;</li>
+                <li>(c) all actions taken through Customer's accounts.</li>
+            </ul>
+            <p>Unauthorized use must be promptly reported to RoofSig.</p>
+
+            <h3>3.5 No Emergency Services</h3>
+            <p>The Services are <strong>not a replacement for emergency services</strong> and do not support or route calls to 911, 112, or similar emergency numbers. Customer must not represent otherwise to End Users.</p>
+
+            <h3>3.6 AI and Automated Systems</h3>
+            <p>The Services include AI-powered call handling, natural language processing, and automated decision-making. Customer acknowledges that:</p>
+            <ul>
+                <li>(a) AI-generated responses may contain errors, inaccuracies, or unintended content;</li>
+                <li>(b) Automated booking and routing decisions depend on configuration, integrations, and data quality, and may not always reflect Customer's intended business logic;</li>
+                <li>(c) Customer is solely responsible for reviewing, monitoring, and correcting any AI or automation outputs before they affect End Users or business operations;</li>
+                <li>(d) RoofSig does not warrant that AI or automation will be error-free, and Customer assumes all risk for reliance on automated systems.</li>
+            </ul>
+        </div>
+
+        <h2>4. Customer Responsibilities</h2>
+
+        <div class="section">
+            <h3>4.1 Compliance with Law</h3>
+            <p>Customer is solely responsible for compliance with all laws and regulations applicable to its use of the Services and its communications with End Users, including without limitation:</p>
+            <ul>
+                <li>US Telephone Consumer Protection Act (TCPA) and implementing regulations</li>
+                <li>Telemarketing Sales Rule (TSR)</li>
+                <li>CAN-SPAM (where applicable)</li>
+                <li>Canada's Anti-Spam Legislation (CASL)</li>
+                <li>Federal and state/provincial privacy and consumer protection laws</li>
+                <li>CTIA Messaging Principles and Best Practices and carrier policies</li>
+            </ul>
+            <p>Customer, not RoofSig, determines whether and how to use the Services in compliance with law.</p>
+
+            <h3>4.2 Consent and Notices</h3>
+            <p>Customer is solely responsible for:</p>
+            <ul>
+                <li>(a) obtaining, documenting, and maintaining all legally required consents from End Users for calls, SMS/MMS, and automated messaging;</li>
+                <li>(b) providing legally adequate disclosures, call-to-action language, privacy notices, and terms to End Users;</li>
+                <li>(c) honoring End User opt-out requests and preferences.</li>
+            </ul>
+            <p>RoofSig may provide technical features to assist, but does not verify or guarantee Customer's legal compliance.</p>
+
+            <h3>4.3 Content and Call Flows</h3>
+            <p>Customer is solely responsible for:</p>
+            <ul>
+                <li>(a) the content of all messages, call scripts, IVR prompts, review requests, and any other communication transmitted via the Services;</li>
+                <li>(b) the business logic of routing and booking, including appointment decisions, pricing, and service commitments;</li>
+                <li>(c) any promises or representations made to End Users in communications sent through the Services.</li>
+            </ul>
+
+            <h3>4.4 Customer Systems and Data</h3>
+            <p>Customer is responsible for:</p>
+            <ul>
+                <li>(a) its own hardware, network, internet access, devices, and systems;</li>
+                <li>(b) configuring and maintaining its CRM, calendar, or other integrated systems that interact with the Services;</li>
+                <li>(c) securing and backing up Customer Data outside the Services as appropriate for its business.</li>
+            </ul>
+
+            <h3>4.5 Restrictions on Use</h3>
+            <p>Customer shall not use the Services to:</p>
+            <ul>
+                <li>(a) send unlawful, fraudulent, deceptive, or abusive communications;</li>
+                <li>(b) harass, threaten, or harm individuals;</li>
+                <li>(c) send spam or unsolicited messages in violation of law or industry guidelines;</li>
+                <li>(d) transmit malicious code or attempt to interfere with network operations;</li>
+                <li>(e) engage in high-risk activities where failure of the Services could lead to death or serious bodily injury (e.g., medical or emergency response).</li>
+            </ul>
+
+            <h3>4.6 Campaign Registration and Vetting</h3>
+            <p>Customer acknowledges that:</p>
+            <ul>
+                <li>(a) RoofSig's messaging capabilities depend on third-party campaign registration systems (including A2P 10DLC for US long-code messaging);</li>
+                <li>(b) Customer must provide accurate information for campaign registration, including but not limited to: opt-in methods, sample messages, website URLs, privacy policy links, and terms of service;</li>
+                <li>(c) Campaign registration may be rejected by carriers or aggregators if Customer's information is incomplete, inconsistent, or non-compliant with carrier requirements;</li>
+                <li>(d) RoofSig is not responsible for campaign rejections, delays, or throughput restrictions imposed by third-party vetting processes;</li>
+                <li>(e) Customer must promptly respond to requests for additional information or documentation to support campaign approval.</li>
+            </ul>
+
+            <h3>4.7 Calendar and Booking Integration</h3>
+            <p>Customer acknowledges that:</p>
+            <ul>
+                <li>(a) Automated booking via calendar integrations depends on accurate calendar configuration, availability data, and API reliability;</li>
+                <li>(b) RoofSig is not responsible for booking conflicts, double-bookings, or missed appointments caused by calendar sync failures, incorrect availability settings, or third-party API issues;</li>
+                <li>(c) Customer must maintain accurate business hours, service areas, and capacity settings in the Services to ensure proper routing and booking.</li>
+            </ul>
+        </div>
+
+        <h2>5. Acceptable Use and Third-Party Policies</h2>
+
+        <div class="section">
+            <h3>5.1 Twilio and Carrier Policies</h3>
+            <p>Customer's use of the Services is subject to applicable Twilio acceptable use policies, CTIA guidelines, and carrier requirements. RoofSig may update technical or usage rules to maintain compliance with these third-party policies.</p>
+
+            <h3>5.2 Enforcement</h3>
+            <p>RoofSig may suspend or limit the Services immediately, with or without notice, if:</p>
+            <ul>
+                <li>(a) RoofSig reasonably suspects misuse, fraud, or security risk;</li>
+                <li>(b) required by law, regulation, or carrier request;</li>
+                <li>(c) Customer's use causes or threatens to cause network harm, reputational risk, or regulatory exposure.</li>
+            </ul>
+            <p>RoofSig will restore service when the underlying issue is resolved, where commercially reasonable.</p>
+        </div>
+
+        <h2>6. Third-Party Services and Integrations</h2>
+
+        <div class="section">
+            <h3>6.1 Third-Party Services</h3>
+            <p>The Services may interoperate with Third-Party Services (e.g., Twilio, CRMs, payment processors). These are provided under the terms of the third parties, not RoofSig. RoofSig does not control and is not responsible for Third-Party Services.</p>
+
+            <h3>6.2 Authorizations</h3>
+            <p>Customer authorizes RoofSig to access, use, and interact with Third-Party Services, on Customer's behalf, as reasonably necessary to provide the Services (for example, to send messages, retrieve calendar availability, or log events).</p>
+
+            <h3>6.3 Disclaimers</h3>
+            <p>RoofSig is not responsible for unavailability, changes, defects, or discontinuation of Third-Party Services or carrier networks, and has no liability for delays or failures caused by them.</p>
+
+            <h3>6.4 Phone Numbers</h3>
+            <ul>
+                <li>(a) RoofSig may provision telephone numbers to Customer for use with the Services. All such numbers remain the property of the underlying carrier or provider.</li>
+                <li>(b) Customer has no ownership rights in provisioned numbers and may not port numbers away from RoofSig's infrastructure except as explicitly permitted in writing.</li>
+                <li>(c) RoofSig may change, suspend, or reclaim numbers if required by carriers, regulatory authorities, or due to misuse or non-payment.</li>
+                <li>(d) Upon termination, Customer must cease all use of provisioned numbers, and RoofSig has no obligation to transfer or port such numbers.</li>
+            </ul>
+        </div>
+
+        <h2>7. Fees and Payment</h2>
+
+        <div class="section">
+            <h3>7.1 Fees</h3>
+            <p>Fees are specified in the applicable Order Form and may include:</p>
+            <ul>
+                <li>Monthly subscription fees (e.g., Core, Ads Add-On)</li>
+                <li>One-time setup fees</li>
+                <li>Usage-based charges (e.g., telephony, messaging, or overage fees) if applicable</li>
+            </ul>
+
+            <h3>7.2 Billing and Payment</h3>
+            <p>Unless otherwise stated in the Order Form:</p>
+            <ul>
+                <li>(a) Subscription fees are billed in advance; usage fees are billed in arrears;</li>
+                <li>(b) All fees are due within [30] days of invoice date or via automatic charge through a designated payment method;</li>
+                <li>(c) Fees are non-refundable, except where required by law or explicitly stated otherwise.</li>
+            </ul>
+
+            <h3>7.3 Taxes</h3>
+            <p>Fees are exclusive of taxes (sales, use, VAT, GST/HST, etc.). Customer is responsible for all applicable taxes, excluding taxes based on RoofSig's net income.</p>
+
+            <h3>7.4 Non-Payment</h3>
+            <p>If Customer fails to pay any undisputed amount when due:</p>
+            <ul>
+                <li>(a) RoofSig may charge interest on overdue amounts at the lesser of 1.5% per month or the maximum rate permitted by law;</li>
+                <li>(b) RoofSig may suspend the Services after reasonable notice until all overdue amounts are paid.</li>
+            </ul>
+
+            <h3>7.5 Fee Changes</h3>
+            <p>At the end of any Subscription Term, RoofSig may adjust pricing for renewal by providing prior notice as specified in the Order Form or these Terms.</p>
+        </div>
+
+        <h2>8. Term and Termination</h2>
+
+        <div class="section">
+            <h3>8.1 Term</h3>
+            <p>These Terms are effective as of the earliest of: (a) the date Customer first accesses the Services; or (b) the effective date of the first Order Form, and continue until all Order Forms have expired or been terminated.</p>
+
+            <h3>8.2 Subscription Term</h3>
+            <p>Each Order Form specifies its initial Subscription Term. Subscriptions renew automatically for successive terms (e.g., month-to-month or annually) unless either party gives notice of non-renewal at least [30] days before the end of the then-current term.</p>
+
+            <h3>8.3 Termination for Cause</h3>
+            <p>Either party may terminate an Order Form or these Terms upon written notice if:</p>
+            <ul>
+                <li>(a) the other party materially breaches these Terms or the Order Form and fails to cure the breach within [30] days of notice; or</li>
+                <li>(b) the other party becomes insolvent, enters bankruptcy, or ceases to do business.</li>
+            </ul>
+
+            <h3>8.4 Emergency Suspension</h3>
+            <p>RoofSig may immediately suspend or terminate access if Customer's use:</p>
+            <ul>
+                <li>(a) presents an immediate security or legal risk;</li>
+                <li>(b) violates carrier or industry rules in a way that threatens service to other customers;</li>
+                <li>(c) exposes RoofSig to potential regulatory enforcement.</li>
+            </ul>
+        </div>
+
+        <h2>9. Effect of Termination; Data Export</h2>
+
+        <div class="section">
+            <h3>9.1 Access</h3>
+            <p>Upon termination or expiration of a Subscription Term:</p>
+            <ul>
+                <li>(a) Customer's right to access the Services for that subscription ends;</li>
+                <li>(b) RoofSig may disable access to applicable accounts, subject to any agreed transition period.</li>
+            </ul>
+
+            <h3>9.2 Data Retention and Export</h3>
+            <p>For a period of [30] days following termination of an Order Form, RoofSig will make available, upon written request, a machine-readable export of Customer Data that is stored in primary, production databases, subject to technical feasibility and any unpaid fees. After this period, RoofSig may delete or anonymize Customer Data from its active systems, subject to legal retention obligations.</p>
+
+            <h3>9.3 Survival</h3>
+            <p>Sections concerning fees, data handling, confidentiality, intellectual property, warranties, indemnities, limitations of liability, and other provisions that by their nature should survive termination will survive.</p>
+        </div>
+
+        <h2>10. Data; Privacy; Security</h2>
+
+        <div class="section">
+            <h3>10.1 Customer Data Ownership</h3>
+            <p>As between the parties, Customer retains all rights, title, and interest in and to Customer Data. RoofSig does not claim ownership of Customer Data.</p>
+
+            <h3>10.2 License to Customer Data</h3>
+            <p>Customer grants RoofSig a non-exclusive, worldwide, royalty-free license to host, process, transmit, and use Customer Data solely as necessary to:</p>
+            <ul>
+                <li>(a) provide, maintain, and improve the Services;</li>
+                <li>(b) prevent or address technical problems and support requests;</li>
+                <li>(c) comply with legal obligations.</li>
+            </ul>
+
+            <h3>10.3 Service Data and Aggregated Data</h3>
+            <p>RoofSig may generate logs, usage statistics, and other data about the operation of the Services ("Service Data"). RoofSig may use Service Data, and may create aggregated and/or anonymized data from Customer Data and Service Data, for internal analytics, monitoring, security, and product improvement, and for benchmarking or reporting, provided that such data does not identify Customer or End Users.</p>
+
+            <h3>10.4 End User Personal Data</h3>
+            <p>Customer acknowledges that the Services process personal data of End Users (e.g., phone numbers, call details, SMS content). Customer is the "business" or "controller" with respect to End User data under applicable US/Canadian privacy laws, and RoofSig acts as a "service provider" or "processor" solely on behalf of Customer. RoofSig will:</p>
+            <ul>
+                <li>(a) process End User data only as necessary to provide the Services and as instructed in writing by Customer;</li>
+                <li>(b) not sell or share End User personal data for cross-context behavioral advertising or unrelated marketing;</li>
+                <li>(c) implement reasonable technical and organizational measures designed to protect personal data against unauthorized access or disclosure.</li>
+            </ul>
+
+            <h3>10.5 Security Measures</h3>
+            <p>RoofSig will maintain commercially reasonable administrative, technical, and physical safeguards designed to protect the confidentiality, integrity, and availability of Customer Data, including access controls, encryption in transit where technically appropriate, and regular monitoring of core infrastructure.</p>
+
+            <h3>10.6 Data Incidents</h3>
+            <p>If RoofSig becomes aware of a security incident that materially compromises the confidentiality or integrity of Customer Data within RoofSig's systems, RoofSig will:</p>
+            <ul>
+                <li>(a) notify Customer without undue delay;</li>
+                <li>(b) provide reasonably available information about the nature and scope of the incident;</li>
+                <li>(c) take commercially reasonable steps to mitigate and remediate.</li>
+            </ul>
+            <p>Customer is responsible for incident notifications required by law to End Users or regulators, unless otherwise specified in a separate data processing addendum.</p>
+
+            <h3>10.7 Data Processing Addendum</h3>
+            <p>Upon Customer's written request, RoofSig may execute a separate data processing addendum ("DPA") that includes Standard Contractual Clauses or other mechanisms required by applicable privacy laws. Any such DPA will supplement, but not replace, the data processing terms in Section 10. In the event of conflict between a DPA and these Terms, the DPA governs solely with respect to the specific data processing obligations addressed therein.</p>
+        </div>
+
+        <h2>11. Intellectual Property</h2>
+
+        <div class="section">
+            <h3>11.1 RoofSig IP</h3>
+            <p>RoofSig and its licensors own all rights, title, and interest in and to the Services, Documentation, and all related technology, algorithms, workflows, templates, designs, and know-how, including any modifications or improvements made during the term. No rights are granted to Customer other than as expressly set forth in these Terms.</p>
+
+            <h3>11.2 Feedback</h3>
+            <p>If Customer or its Authorized Users provide suggestions, ideas, or feedback regarding the Services ("Feedback"), RoofSig may use and exploit such Feedback without restriction or obligation, including to improve the Services, provided that RoofSig does not identify Customer publicly without consent.</p>
+
+            <h3>11.3 Marks</h3>
+            <p>Customer may use RoofSig's name and logo solely as reasonably necessary to identify RoofSig as Customer's technology provider, subject to any brand use guidelines. RoofSig may refer to Customer's name and logo as a customer in its own marketing materials, subject to Customer's reasonable brand guidelines and any written restrictions.</p>
+        </div>
+
+        <h2>12. Confidentiality</h2>
+
+        <div class="section">
+            <h3>12.1 Definition</h3>
+            <p><strong>"Confidential Information"</strong> means non-public information disclosed by one party ("Disclosing Party") to the other ("Receiving Party") that is marked as confidential or that should reasonably be understood to be confidential given the nature of the information and circumstances of disclosure.</p>
+
+            <h3>12.2 Obligations</h3>
+            <p>The Receiving Party will:</p>
+            <ul>
+                <li>(a) use Confidential Information solely to perform obligations or exercise rights under these Terms;</li>
+                <li>(b) not disclose Confidential Information to any third party except as permitted;</li>
+                <li>(c) protect Confidential Information using at least the degree of care it uses for its own similar information and no less than reasonable care.</li>
+            </ul>
+
+            <h3>12.3 Exceptions</h3>
+            <p>Confidential Information does not include information that:</p>
+            <ul>
+                <li>(a) is or becomes publicly available through no fault of the Receiving Party;</li>
+                <li>(b) is lawfully received from a third party without confidentiality obligations;</li>
+                <li>(c) is independently developed by the Receiving Party without use of the Disclosing Party's Confidential Information;</li>
+                <li>(d) was already known to the Receiving Party prior to disclosure.</li>
+            </ul>
+
+            <h3>12.4 Compelled Disclosure</h3>
+            <p>The Receiving Party may disclose Confidential Information if legally required, provided it gives prompt notice (where legally permitted) and cooperates with reasonable efforts to limit disclosure.</p>
+        </div>
+
+        <h2>13. Warranties; Disclaimers</h2>
+
+        <div class="section">
+            <h3>13.1 RoofSig Warranties</h3>
+            <p>RoofSig represents that:</p>
+            <ul>
+                <li>(a) it has the right and authority to enter into these Terms;</li>
+                <li>(b) it will provide the Services in a commercially reasonable manner consistent with industry standards.</li>
+            </ul>
+
+            <h3>13.2 Customer Warranties</h3>
+            <p>Customer represents and warrants that:</p>
+            <ul>
+                <li>(a) it has all necessary rights and consents to submit Customer Data and to permit its processing via the Services;</li>
+                <li>(b) its use of the Services and all communications sent via the Services will comply with applicable law and these Terms.</li>
+            </ul>
+
+            <h3>13.3 DISCLAIMERS</h3>
+            <p>EXCEPT FOR THE EXPRESS WARRANTIES IN THIS SECTION, THE SERVICES ARE PROVIDED "AS IS" AND "AS AVAILABLE," WITH ALL FAULTS. ROOFSIG AND ITS SUPPLIERS DISCLAIM ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, AND NON-INFRINGEMENT, AND ANY WARRANTIES ARISING FROM COURSE OF DEALING OR USAGE OF TRADE.</p>
+
+            <h3>13.4</h3>
+            <p>ROOFSIG DOES NOT WARRANT THAT THE SERVICES WILL BE UNINTERRUPTED, ERROR-FREE, OR SECURE, OR THAT MESSAGES OR CALLS WILL BE DELIVERED WITHOUT DELAY, LOSS, OR MODIFICATION. CARRIERS AND THIRD-PARTY SERVICES MAY FAIL, BE CONGESTED, OR BE UNAVAILABLE, AND ROOFSIG HAS NO LIABILITY FOR SUCH FAILURES.</p>
+        </div>
+
+        <h2>14. Indemnification</h2>
+
+        <div class="section">
+            <h3>14.1 Customer Indemnity</h3>
+            <p>Customer will defend, indemnify, and hold harmless RoofSig and its officers, directors, employees, and agents from and against any third-party claims, damages, liabilities, costs, and expenses (including reasonable attorneys' fees) arising out of or related to:</p>
+            <ul>
+                <li>(a) Customer's or its Authorized Users' use of the Services in violation of these Terms or applicable law;</li>
+                <li>(b) Customer's communications with End Users, including content of messages, call flows, and any alleged violations of TCPA, TSR, CASL, CAN-SPAM, or similar laws;</li>
+                <li>(c) Customer Data, including any allegation that Customer Data violates third-party rights or privacy.</li>
+            </ul>
+
+            <h3>14.2 RoofSig Indemnity (Limited IP)</h3>
+            <p>RoofSig will defend Customer from any third-party claim alleging that the Services, as provided by RoofSig and used by Customer in accordance with these Terms, infringe a US or Canadian patent, copyright, or registered trademark, and will pay any resulting damages finally awarded by a court or agreed in settlement. RoofSig may, at its option:</p>
+            <ul>
+                <li>(a) procure the right for Customer to continue using the Services;</li>
+                <li>(b) modify the Services to be non-infringing; or</li>
+                <li>(c) terminate the impacted Service and refund any prepaid, unused fees.</li>
+            </ul>
+            <p>RoofSig has no obligation for claims arising from: (i) Customer Data; (ii) Customer's modifications or combinations of the Services with non-RoofSig items; (iii) use of the Services in breach of these Terms.</p>
+
+            <h3>14.3 Indemnification Procedure</h3>
+            <p>The indemnified party must:</p>
+            <ul>
+                <li>(a) promptly notify the indemnifying party of any claim;</li>
+                <li>(b) allow the indemnifying party sole control of the defense and settlement;</li>
+                <li>(c) provide reasonable cooperation at the indemnifying party's expense.</li>
+            </ul>
+            <p>The indemnifying party may not settle any claim that imposes a non-monetary obligation on the indemnified party without its prior written consent.</p>
+        </div>
+
+        <h2>15. Limitation of Liability</h2>
+
+        <div class="section">
+            <h3>15.1 Exclusion of Certain Damages</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, NEITHER PARTY WILL BE LIABLE FOR ANY INDIRECT, INCIDENTAL, CONSEQUENTIAL, SPECIAL, EXEMPLARY, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, GOODWILL, OR DATA, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.</p>
+
+            <h3>15.2 Cap on Liability</h3>
+            <p>TO THE MAXIMUM EXTENT PERMITTED BY LAW, ROOFSIG'S TOTAL AGGREGATE LIABILITY ARISING OUT OF OR RELATED TO THE SERVICES OR THESE TERMS WILL NOT EXCEED THE AMOUNTS ACTUALLY PAID BY CUSTOMER TO ROOFSIG FOR THE SERVICES GIVING RISE TO THE CLAIM DURING THE TWELVE (12) MONTHS IMMEDIATELY PRECEDING THE EVENT GIVING RISE TO THE CLAIM.</p>
+
+            <h3>15.3 Exceptions</h3>
+            <p>The limitations in this Section do not apply to Customer's payment obligations, or to either party's liability for gross negligence, willful misconduct, or indemnification obligations for third-party IP infringement (to the extent such liability cannot legally be limited).</p>
+        </div>
+
+        <h2>16. Service Levels and Support (Baseline)</h2>
+
+        <div class="section">
+            <h3>16.1 Availability</h3>
+            <p>RoofSig will use commercially reasonable efforts to maintain Service availability, excluding:</p>
+            <ul>
+                <li>(a) scheduled maintenance notified in advance;</li>
+                <li>(b) emergency maintenance;</li>
+                <li>(c) downtime caused by Third-Party Services, carriers, or Customer systems;</li>
+                <li>(d) force majeure events.</li>
+            </ul>
+
+            <h3>16.2 Support</h3>
+            <p>RoofSig will provide email-based support during normal business hours, and will use commercially reasonable efforts to respond to support requests within a reasonable timeframe. Specific SLAs may be included in an Order Form or separate SLA.</p>
+        </div>
+
+        <h2>17. Modifications</h2>
+
+        <div class="section">
+            <h3>17.1 Service Changes</h3>
+            <p>RoofSig may modify or discontinue features of the Services from time to time, including to comply with legal or carrier requirements, improve performance, or address security issues. RoofSig will avoid materially reducing core functionality during a Subscription Term without providing a reasonable alternative.</p>
+
+            <h3>17.2 Terms Changes</h3>
+            <p>RoofSig may update these Terms. Material changes will be communicated via the dashboard, email, or posting a revised version with an updated "Last updated" date. Continued use of the Services after changes become effective constitutes acceptance.</p>
+        </div>
+
+        <h2>18. Governing Law; Dispute Resolution</h2>
+
+        <div class="section">
+            <h3>18.1 Governing Law</h3>
+            <p>These Terms are governed by the laws of the State of Wyoming, excluding its conflict-of-laws rules. The United Nations Convention on Contracts for the International Sale of Goods does not apply.</p>
+
+            <h3>18.2 Venue</h3>
+            <p>Any disputes arising out of or relating to these Terms or the Services will be resolved exclusively in the state or federal courts located in Sheridan County, Wyoming, and each party consents to personal jurisdiction there.</p>
+
+            <h3>18.3 Injunctive Relief</h3>
+            <p>Nothing in this section limits either party's right to seek injunctive or other equitable relief in any court of competent jurisdiction to prevent actual or threatened misuse of its Confidential Information or intellectual property.</p>
+        </div>
+
+        <h2>19. Miscellaneous</h2>
+
+        <div class="section">
+            <h3>19.1 Independent Contractors</h3>
+            <p>The parties are independent contractors; nothing in these Terms creates an agency, partnership, or joint venture.</p>
+
+            <h3>19.2 Assignment</h3>
+            <p>Customer may not assign or transfer these Terms or any rights or obligations without RoofSig's prior written consent, except to a successor in interest in connection with a merger or sale of substantially all assets, with notice to RoofSig. RoofSig may assign these Terms to an Affiliate or successor without Customer's consent.</p>
+
+            <h3>19.3 Entire Agreement</h3>
+            <p>These Terms, together with any Order Forms and any referenced policies (including RoofSig's Messaging Terms and Privacy Policy), constitute the entire agreement between the parties and supersede prior agreements on the subject matter.</p>
+
+            <h3>19.4 Severability</h3>
+            <p>If any provision is found unenforceable, the remaining provisions will remain in full force, and the unenforceable provision will be replaced with an enforceable provision that most closely reflects the original intent.</p>
+
+            <h3>19.5 No Waiver</h3>
+            <p>Failure to enforce any provision is not a waiver of that provision or any other provision.</p>
+
+            <h3>19.6 Notices</h3>
+            <p>Legal notices to RoofSig must be sent to:</p>
+            <p>
+                RoofSig LLC<br>
+                30 N Gould St Ste N, Sheridan<br>
+                Sheridan County, WY 82801<br>
+                United States<br>
+                <a href="mailto:legal@roofsig.com" style="color: #C41E3A;">legal@roofsig.com</a>
+            </p>
+            <p>Notices to Customer may be sent to the address or email on file in the relevant Order Form or account.</p>
+            <p>Routine support or sales inquiries should be sent to <a href="mailto:support@roofsig.com" style="color: #C41E3A;">support@roofsig.com</a>.</p>
+
+            <h3>19.7 Force Majeure</h3>
+            <p>Neither party is liable for delay or failure to perform due to events beyond its reasonable control, including acts of God, natural disasters, strikes, war, terrorism, riots, acts of government, or failures of third-party networks or services.</p>
+        </div>
+
+        <h2>20. Contact Information</h2>
+
+        <div class="section">
+            <p>For questions about these Terms:</p>
+            <p>
+                <strong>Email:</strong> <a href="mailto:legal@roofsig.com" style="color: #C41E3A;">legal@roofsig.com</a> (or <a href="mailto:support@roofsig.com" style="color: #C41E3A;">support@roofsig.com</a>)
+            </p>
+            <p>
+                <strong>Mailing address:</strong><br>
+                RoofSig LLC<br>
+                30 N Gould St Ste N, Sheridan<br>
+                Sheridan County, WY 82801<br>
+                United States
+            </p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 RoofSig LLC. All rights reserved. | <a href="index.html">Home</a> | <a href="terms.html">Messaging Terms</a> | <a href="privacy.html">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
